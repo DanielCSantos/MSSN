@@ -1,0 +1,100 @@
+{UTF-8}
+Growth=
+	growth rate * Population
+	~	bacteria/h
+	~		|
+
+growth rate=
+	0.1
+	~	1/h
+	~		|
+
+Population= INTEG (
+	Growth,
+		100)
+	~	bacteria
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 12
+	~	Hour
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Hour
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Hour [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 0.125
+	~	Hour [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,110,0
+10,1,Population,649,133,40,20,3,3,0,0,0,0,0,0
+12,17,48,411,124,10,8,0,3,0,0,-1,0,0,0
+1,19,21,1,4,0,0,22,0,0,0,-1--1--1,,1|(545,124)|
+1,20,21,17,100,0,0,22,2,0,0,-1--1--1,|0||-1--1--1,1|(445,124)|
+11,21,0,476,124,6,8,34,3,0,0,1,0,0,0
+10,22,Growth,476,143,25,11,40,3,0,0,-1,0,0,0
+10,23,growth rate,388,230,37,11,8,3,0,0,0,0,0,0
+1,24,23,22,1,0,0,0,0,64,0,-1--1--1,,1|(405,177)|
+1,25,1,22,1,0,0,0,0,64,0,-1--1--1,,1|(494,190)|
+12,26,0,688,38,137,38,8,135,0,0,-1,0,0,0
+Unconstrained Growth Population Model-This model represents the growth of a population with no limiting factors     Daniel Santos 7/8/17 
+12,27,4264384,800,162,80,20,3,92,0,0,0,0,0,0
+growth rate,0,0.2,0.02
+///---\\\
+:GRAPH Growth_and_Population
+:TITLE Growth and Population (Daniel)
+:SCALE
+:VAR Growth
+:VAR Population
+
+:TABLE Growth_and_Population_Table
+:TITLE Growth and Population (Daniel)
+:PRETTYNUM
+:X-MIN 5
+:X-MAX 10
+:TIME-DOWN
+:FIRST-CELLWIDTH 20
+:CELLWIDTH 14
+:VAR Population
+:VAR Growth
+:L<%^E!@
+1:Current09.vdf
+1:Current.vdf
+9:Current09
+23:0
+15:0,0,0,0,0,0
+19:110,0
+27:0,
+34:0,
+4:Time
+5:Population
+35:Date
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:5
+41:0
+42:0
+24:0
+25:12
+26:12
