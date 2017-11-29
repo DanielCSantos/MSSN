@@ -1,7 +1,10 @@
 package ProcessingSetup;
 
-import TPC02.StarShape;
+
+import TPC03.SkydivingWorld;
+import TPC03.StarSystem;
 import processing.core.PApplet;
+
 
 public class ProcessingSetup extends PApplet{
 
@@ -38,8 +41,20 @@ public class ProcessingSetup extends PApplet{
 	}
 
     public static void main(String[] args) {
+    	//TPC02
 //    	processingApp = new SketchExemplov2();
-    	processingApp = new StarShape();
+//    	processingApp = new StarShape();
+    	
+    	//TPC03
+//    	processingApp = new SeveralForces();
+//    	processingApp = new SolarSystem();
+    	processingApp = new StarSystem();
+    	
+    	
+//    	processingApp = new WorldOfSkyDivers();
+//    	processingApp = new ParticleSystem();
+//    	processingApp = new Boid();
+    	
         PApplet.main(ProcessingSetup.class);
     }
 }
